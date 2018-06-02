@@ -35,7 +35,7 @@ end
 
   patch '/recipes/:id' do  #updates a recipe
     @recipe = Recipe.find_by_id(params[:id])
-    binding.pry
+    # binding.pry
     @recipe.name = params[:name]
     @recipe.ingredients = params[:ingredients]
     @recipe.cook_time = params[:cook_time]
